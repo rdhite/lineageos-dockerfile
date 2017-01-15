@@ -13,10 +13,11 @@ If you need a non-root user (if you aren't sure, then assume you do), create a n
 transfer ownership of repo and LineageOS code
 ```
 $ useradd -m userName
-$ password userName
+$ passwd userName
 $ chown -R userName /home/bin
 $ chown -R userName /home/LineageOS
-# add "export PATH=$PATH:~/bin" (sans quotes) to /home/userName/.bashrc
+# add "export PATH=$PATH:/home/bin" (sans quotes) to 
+/home/userName/.bashrc
 ```
 
 Each time a container is started using this image and that container has a non-root user, be 
